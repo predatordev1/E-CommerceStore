@@ -9,7 +9,7 @@ RUN npm ci || npm install --production
 COPY . .
 
 ENV PORT=3002
-ENV MONGODB_URI='mongodb://localhost:27017/ecommerce_carts'
+ENV MONGODB_URI=mongodb://localhost:27017/ecommerce_products
 EXPOSE 3002
 
-CMD ["node", "app.js"]
+CMD ["node", "server.js"]
